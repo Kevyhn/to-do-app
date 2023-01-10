@@ -1,0 +1,142 @@
+.App {
+  padding: 0 20px;
+}
+
+.main {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.header nav li {
+  padding: 12px 0;
+}
+
+.header nav a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.header .active {
+  color: #000;
+  border-bottom: 3px solid #007adb;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.input {
+  width: 75%;
+  font-size: 16px;
+  padding: 0 7px;
+  outline: none;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+}
+
+.add-btn {
+  width: 20%;
+  padding: 15px 0;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  background: #007adb;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.task input[type="checkbox"] {
+  transform: scale(1.5);
+  margin-left: 3px;
+}
+
+.task span {
+  margin-left: 8px;
+  font-size: 17px;
+}
+
+.task .checked {
+  text-decoration: line-through;
+}
+
+.completedItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deleteBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.delete-all-ctn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.delete-all-ctn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  background: #f83434;
+}
+
+button svg {
+  margin-right: 5px;
+  font-size: 10px;
+}
+
+.alert {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100vw;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 0;
+  background: rgb(255, 0, 0);
+  transition: all 500ms;
+}
+
+.alert-active {
+  top: 0;
+}
+
+@media (max-width: 400px) {
+  .header nav ul {
+    padding: 0;
+  }
+}
