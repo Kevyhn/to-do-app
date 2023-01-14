@@ -6,7 +6,7 @@ export const AlertComponent = ({active}) => {
 
 	return (
 		<div className={active ? 'alert alert-active' : 'alert'} ref={divAlert}>
-			you need complete details!
+			You need to complete the details!
 		</div>
 	);
 }
